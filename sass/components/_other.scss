@@ -1,0 +1,97 @@
+body {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 31px;
+	letter-spacing: 0.03em;
+	color: var(--main-color);
+	margin: 0px;
+}
+
+/* LISTS */
+/* ----------------------------------------- */
+
+.unstyled-list {
+	list-style: none;
+}
+
+.footer__unstyled-list {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* CONTAINERS */
+/* ----------------------------------------- */
+
+.container {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 94px 0px 0px 0px;
+
+	&__header{
+		max-width: 1200px;
+		margin: 0px auto;
+	}	
+
+	&__team {
+		display: flex;
+		justify-content: center;
+		background-color: var(--link-color);
+		padding: 94px 0px;
+	}
+
+	&__footer {
+		background-color: var(--footer_color);
+	}
+}
+
+.portofolio-container {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+.header {
+	background-color: var(--back-color);
+}
+
+/* SECTIONS */
+/* ----------------------------------------- */
+
+.section {
+	max-width: 1200px;
+	margin: auto;
+	padding: 0px, 94px;
+}
+
+.head-section {
+	width: 100%;
+	background-color: var(--sec-color);
+}
+
+.section__hero {
+	background-image: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 0.4),
+			rgba(0, 0, 0, 0.4)
+		),
+		url("../images/hero_image.jpg");
+	background-size: cover;
+	background-position: 50% 50%;
+	/* max-width: 1600px; */
+	margin: 0px auto;
+}
+
+.hero__section {
+	box-sizing: border-box;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.buttons {
+	background-color: var(--back-color);
+}

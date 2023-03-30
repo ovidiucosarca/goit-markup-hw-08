@@ -1,0 +1,78 @@
+.team {
+	&__photos__grid {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 30px;
+		margin: 0px;
+		padding: 0px;
+	}
+
+	&__member {
+		box-sizing: border-box;
+		width: 270px;
+		height: 428px;
+		left: 215px;
+		top: 1635px;
+		background: var(--back-color);
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+			0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+		border-radius: 0px 0px 4px 4px;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: var(--main-color);
+	}
+
+	&__type {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: var(--third-color);
+	}
+
+	&__icon__control {
+		fill: var(--third-color);
+		&:hover {
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+			fill: var(--back-color);
+		}
+	}
+
+	&__socialicon {
+		width: 44px;
+		height: 44px;
+		background-color: var(--back-color);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		fill: var(--sec-color);
+		cursor: pointer;
+		padding: 0px;
+
+		&:hover {
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+			background-color: var(--sec-color);
+		}}
+
+		&__socialicons__grid {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+		}
+
+		&__socialicons__grid ul {
+			display: flex;
+			gap: 10px;
+			justify-content: center;
+		}
+	}
+

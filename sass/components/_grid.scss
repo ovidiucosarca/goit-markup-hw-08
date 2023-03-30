@@ -1,0 +1,28 @@
+.grid__contact {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	margin: 0px 0px 0px auto;
+	padding: 10px 0px 0px 0px;
+
+	&__group {
+		background-color: var(--back-color);
+		display: flex;
+		gap: 10px;
+		justify-content: center;
+		align-items: center;
+		/* padding: 16px 32px 16px 32px; */
+	}
+
+	&__element {
+		padding: 0px 0px 6px 0px;
+	}
+	&__element a svg:hover {
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		fill: var(--sec-color);
+	}
+	&__group:hover {
+		color: var(--sec-color);
+		fill: var(--sec-color);
+	}
+}
