@@ -1,0 +1,232 @@
+
+.menu {
+    display: flex;
+    list-style: none;
+  }
+  
+  @media (max-width: 480px) {
+    .menu {
+      display: none;
+    }
+    .header__divide{
+      max-width: 480px;
+      display:flex;
+      justify-content: space-between;
+    }
+  }
+
+
+  .menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .menu .link:hover,
+  .menu .link:focus {
+    text-decoration: underline;
+  }
+  
+  .menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }  
+
+  @media (min-width: 480px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+
+  
+  .menu-toggle:hover svg,
+  .menu-toggle:focus svg{
+    fill: var(--sec-color);
+  }
+  
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: var(--back-color);
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+  
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+  
+  .menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 80px;
+    color: var(--main-color);
+  }
+  
+  
+  .mobile-menu .link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+
+    display: block;
+    padding: 10px;
+    color: var(--main-color);
+    text-decoration: none;
+    &:hover{
+      color: var(--sec-color);
+    }
+  }
+  
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+
+    &__contact {
+      padding: 306px 0px 0px 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      
+    }
+
+    &__phone {
+      font-size: 34px;
+    }
+    &__link {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.02em;
+      color: var(--sec-color);
+      text-decoration: none;
+
+      padding: 0px 10px 0px 0px;
+      border-right: 1px solid var(--main-color);
+      
+      &__mod{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color: var(--sec-color);
+        text-decoration: none;
+        padding: 0px 10px 0px 0px;
+        border-right: none;
+      }
+    }
+
+    &__info {
+      padding-left: 10px;
+      font-weight: 500;
+      line-height: 16px;
+      color: var(--third-color);
+      text-decoration: none;
+      font-size: 24px;
+
+      &:hover {
+        display: inline-block;
+        color: var(--sec-color);
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition);
+      }
+    }
+
+    &__social {
+      padding-top: 64px;
+      display: flex;
+      gap: 5px;
+    }
+  }
+
+
+  @media (max-width: 768px) and (min-width:480px){
+
+      .header__divide{
+        display:flex;
+        justify-content: space-between;
+      }
+      .header__name{
+        margin:24px 0px 25px 15px;
+      }
+      .grid__contact{
+        display: flex;
+        flex-direction: column;
+        gap:3px;
+        padding:0px;
+        margin:0px;
+      }
+
+      .studioq__grid{
+        padding:0px 15px 0px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        // gap:30px;
+      }
+      .studioq__x{
+        width: unset;
+        flex-basis: calc((100% - 30px) / 2);
+        // gap:30px;
+      }
+      .studioq__image{
+        width: unset;
+      }
+
+      .wwd{
+        display: none;
+      }
+
+      .team__photos__grid{
+        padding: 0px 15px 0px 15px;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .team__member{
+        width:unset;
+      }
+
+      .team__x{
+        width: unset;
+        flex-basis: calc((100% - 30px) / 2);
+      }
+      .team__image{
+        display:flex;
+        margin:auto;
+      }
+
+      .regular__customers__logos{
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 0px 15px 60px 15px;
+      }
+      
+      .footer__page{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+
+      .footer__address{
+        padding:0px;
+      }
+  }

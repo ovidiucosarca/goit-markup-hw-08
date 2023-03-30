@@ -1,0 +1,158 @@
+.logo__footer {
+	margin: 0px;
+}
+
+.footer {
+	&__title {
+		font-family: "Raleway";
+		font-style: normal;
+		line-height: 31px;
+		font-size: 26px;
+		text-decoration: none;
+		color: var(--sec-color);
+
+		&__white {
+			color: var(--back-color);
+		}
+	}
+
+	&__info {
+		margin: 0px;
+		padding: 0px;
+	}
+
+	&__page {
+		box-sizing: border-box;
+		height: 251px;
+		display: flex;
+		gap: 70px;
+		padding: 60px 0px 60px 0px;
+	}
+
+	&__address {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		gap: 28px;
+		padding: 60px 0px 60px 0px;
+	}
+
+	&__social {
+		box-sizing: border-box;
+		height: 80px;
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+
+		&__text {
+			font-size: 14px;
+			line-height: 16px;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: var(--back-color);
+			padding: 15px 0px 0px 0px;
+			margin: 0px;
+		}
+	}
+
+	&__icon-list {
+		width: 44px;
+		height: 44px;
+		background-color: var(--hover-color-2);
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		fill: var(--sec-color);
+		cursor: pointer;
+		padding: 0px;
+		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+		&:hover {
+			background-color: var(--sec-color);
+			transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+		}
+	}
+
+	&__icon-control {
+		fill: var(--back-color);
+	}
+
+	&__subscribe {
+		flex-grow: 1;
+	}
+
+	&__subscription-data {
+		display: flex;
+		align-items: center;
+	}
+
+	&__subscribe-text {
+		position: absolute;
+		margin: 0px;
+		top: 10px;
+		left: 43px;
+	}
+
+	&__subscription-email {
+		padding: 20px 0px;
+		flex-grow: 1;
+	}
+
+	&__subscription-email input {
+		width: -webkit-fill-available;
+		background: transparent;
+		color: var(--address-color);
+		border: 1px solid var(--input-border);
+		outline: none;
+
+		padding: 15px;
+		margin-right: 15px;
+
+		filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+		border-radius: 4px;
+	}
+
+	&__subscription-email input::placeholder {
+		color: var(--address-color);
+	}
+
+	&__subscription-email input:focus {
+		background-color: var(--footer_color);
+	}
+
+	&__subscribe-button {
+		width: 200px;
+		height: 50px;
+
+		background: var(--sec-color);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+		border: none;
+		border-radius: 4px;
+
+		color: var(--back-color);
+		padding: 10px 19px 10px 20px;
+		cursor: pointer;
+
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 30px;
+		position: relative;
+	}
+
+	&__send-icon {
+		position: absolute;
+		fill: var(--back-color);
+		top: 13px;
+		right: 28px;
+	}
+
+	&__info__detail {
+		font-weight: 400;
+		font-size: 14px;
+		font-style: normal;
+		line-height: 16px;
+		text-decoration: none;
+		color: var(--address-color);
+	}
+}
