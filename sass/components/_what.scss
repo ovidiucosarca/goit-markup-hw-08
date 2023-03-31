@@ -1,6 +1,12 @@
-.what,
-.team,
-.regular__customers {
+@media screen and (max-width: 1199px) {
+	.wwd {
+	  display: none;
+	}
+  }
+
+@media screen and (min-width: 1200px){
+.what
+{
 	text-align: center;
 	font-size: 36px;
 	line-height: 42px;
@@ -11,8 +17,8 @@
 
 .what {
 	&__photos__grid {
-		/* box-sizing: border-box;
-    height: 294px; */
+	// 	/* box-sizing: border-box;
+    // height: 294px; */
 		display: flex;
 		justify-content: space-between;
 		gap: 30px;
@@ -46,4 +52,5 @@
 		letter-spacing: 0.03em;
 		padding: 27px 0px 27px 0px;
 	}
+}
 }

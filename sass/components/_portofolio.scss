@@ -3,10 +3,11 @@
 		box-sizing: border-box;
 		width: 1200px;
 		display: flex;
+		flex-direction: column;
 		gap: 30px;
 		flex-wrap: wrap;
 		margin: 0px;
-		padding: 50px 0px 94px 0px;
+		padding: 50px 0px 94px 50px;
 
 		& li {
 			overflow: hidden;
@@ -91,3 +92,31 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+
+	.portofolio-container{
+		width: 768px;
+		padding:60px 0px 60px 0px;
+	}
+
+  }
+
+
+  @media screen and (min-width: 1200px) {
+
+	.container{
+		width: 1200px;
+		// padding:6px 0px 60px 0px;
+	}
+
+	.regular__customers__outline{
+		padding:16px 32px 16px 32px;
+
+	}
+
+	.regular__customers__logos{
+		flex-wrap: nowrap;
+	}
+
+  }

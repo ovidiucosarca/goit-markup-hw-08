@@ -1,11 +1,14 @@
 .regular__customers {
-	&__logos {
+
+
+	&__logos{
 		display: flex;
+		flex-wrap: wrap;
 		align-items: center;
 		justify-content: space-between;
+		padding:0px;
 		gap: 30px;
-		margin: 0px;
-		padding: 0px 0px 94px 0px;
+		// margin: 0px 15px 0px 15px;
 	}
 
 	&__outline {
@@ -20,7 +23,7 @@
 		justify-content: center;
 		align-items: center;
 		fill: var(--border3-color);
-		padding: 16px 32px 16px 32px;
+		padding: 16px 50px 16px 50px;
 		transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 		&:hover {
@@ -31,3 +34,30 @@
 		}
 	}
 }
+
+@media screen and (min-width: 768px) {
+
+	.container{
+		width: 768px;
+		padding:60px 0px 60px 0px;
+	}
+
+  }
+
+@media screen and (min-width: 1200px) {
+
+	.container{
+		width: 1200px;
+		// padding:6px 0px 60px 0px;
+	}
+
+	.regular__customers__outline{
+		padding:16px 32px 16px 32px;
+
+	}
+
+	.regular__customers__logos{
+		flex-wrap: nowrap;
+	}
+
+  }
